@@ -1,35 +1,40 @@
 'use client';
 
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, Phone, X } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a2e29]  ">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-slate-800">
-              Valley Cabinet Supply
-            </h1>
-          </div>
+  <Link href="/">
+    <Image
+      src="/Web%20Images/Logos/new-VC-logo-brown.png" 
+      alt="Valley Cabinet Supply"
+      width={100} 
+      height={40} 
+    />
+  </Link>
+</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#consultation" className="text-slate-700 hover:text-slate-900 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
-              Free Consultation
+            <a href="#consultation" className="text-white hover:text-slate-900 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
+              <b> Free 3D</b> Design
             </a>
-            <a href="#samples" className="text-slate-700 hover:text-slate-900 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
-              Samples
+            <a href="#samples" className="text-white hover:text-slate-900 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
+              Order Samples
             </a>
-            <a href="#kitchen" className="text-slate-700 hover:text-slate-900 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
-              Shop Kitchen
-            </a>
-            <a href="#bath" className="text-slate-700 hover:text-slate-900 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
-              Shop Bath
+            
+            <a href="tel:6139170497" className="flex items-center gap-2 text-white hover:text-slate-900 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
+              <Phone /> 613-917-0497
             </a>
           </div>
 
