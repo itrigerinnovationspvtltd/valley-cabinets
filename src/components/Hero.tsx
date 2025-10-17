@@ -99,71 +99,79 @@
 
 export default function Hero() {
   return (
-    <div className="min-h-screen bg-white flex flex-col justify-center items-center  pt-20">
-      <div className="w-full max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-3 ">
-        
+    <div className="min-h-screen bg-white flex flex-col justify-center items-center pt-28 sm:pt-20">
+      
+      <div className="w-full  mx-auto grid grid-cols-1 md:grid-cols-3 ">
+       
         {/* Left Side - Text Content (1 part) */}
-        <div className="md:col-span-1 flex flex-col justify-center space-y-8 px-28">
-          <h1 className="text-5xl font-bold text-[#0a2e29]">
+        <div className="md:col-span-1 flex flex-col justify-center space-y-6 px-6 sm:px-12 md:px-28 text-center md:text-left">
+         
+          <h1 className="text-3xl sm:text-5xl md:text-5xl font-bold text-[#0a2e29]">
+            
             Solid Wood Cabinets at Great Prices.
           </h1>
-          <p className="text-gray-700">
-            <span className="font-bold">No MDF or thermofoil.</span> Plywood boxes, dovetail drawers, soft-close hardware— and professional Ottawa-area installation.
+          <p className="text-gray-700 text-base sm:text-lg">
+           
+            <span className="font-bold">No MDF or thermofoil.</span> Plywood
+            boxes, dovetail drawers, soft-close hardware— and professional
+            Ottawa-area installation.
           </p>
-          <div className="flex space-x-2">
-            <button className="bg-green-900 text-white px-2 py-2 rounded hover:bg-green-800 transition ">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-2 justify-center md:justify-start">
+            
+            <button className="bg-green-900 text-white px-4 py-2 rounded hover:bg-green-800 transition w-full sm:w-auto ">
+              
               FREE 3D DESIGN
             </button>
-            <button className="border border-green-900 text-green-900 px-2 py-2 rounded hover:bg-green-50 transition">
+            <button className="border border-green-900 text-green-900 px-2 py-2 rounded hover:bg-green-50 transition w-full sm:w-auto">
+              
               ORDER SAMPLES
             </button>
           </div>
         </div>
-
         {/* Right Side - Form with Background (2 parts) */}
-        <div
-          className="col-span-2 h-full bg-cover bg-center rounded flex items-center justify-end pr-16 shadow-l-[100px] shadow-[0_0_20px] shadow-green-400/20 bg-[url('/Web%20Images/whitewater-bay/E1-1.jpg')] "
-        >
+        <div className="col-span-2 h-full bg-cover bg-center rounded flex items-center justify-center sm:justify-end p-0 sm:pr-16 shadow-l-[200px] shadow-[0_0_30px] shadow-gray-500 bg-[url('/Web%20Images/whitewater-bay/E1-1.jpg')] mt-8 sm:mt-0 ">
           
-          <div className="bg-white shadow-md flex flex-col items-center m-8 p-8 border border-gray-200 w-full max-w-md rounded-4xl">
-            <h2 className="text-2xl font-semibold mb-4">Free 3D Design</h2>
-            <form className="space-y-3 w-full">
-              <label className="mb-1 text-base text-gray-700">Name</label>
-              <input type="text" className="w-full border rounded px-4 py-1" />
-
-              <label className="mb-1 text-base text-gray-700">Email</label>
-              <input type="email" className="w-full border rounded px-4 py-1" />
-
-              <label className="mb-1 text-base text-gray-700">Phone</label>
-              <input type="tel" className="w-full border rounded px-4 py-1" />
-
-              <label className="mb-1 text-base text-gray-700">City / Neighbourhood</label>
-              <input type="text" className="w-full border rounded px-4 py-1" />
-
-              <label className="mb-1 text-base text-gray-700">Installation Needed?</label>
-              <select className="w-full border rounded px-4 py-1">
-                <option>Yes</option>
-                <option>No</option>
+          <div className="bg-white shadow-md flex flex-col items-center m-4 sm:m-8 p-6 sm:p-8 border border-gray-200 w-full max-w-sm sm:max-w-md rounded-3xl">
+            
+            <h2 className="text-xl sm:text-2xl font-semibold mb-4">Free 3D Design</h2>
+            <form className="space-y-1 sm:space-y-3 w-full">
+              
+              <label className="text-base text-gray-700">Name</label>
+              <input type="text" className="w-full border rounded px-2 sm:px-3 sm:py-2" />
+              <label className=" text-base text-gray-700">Email</label>
+              <input type="email" className="w-full border rounded px-2 sm:px-3 sm:py-2" />
+              <label className="text-base text-gray-700">Phone</label>
+              <input type="tel" className="w-full border rounded px-2  sm:px-3 sm:py-2" />
+              <label className=" text-base text-gray-700">
+                City / Neighbourhood
+              </label>
+              <input type="text" className="w-full border rounded px-2 sm:px-3 sm:py-2" />
+              <label className="text-base text-gray-700">
+                Installation Needed?
+              </label>
+              <select className="w-full border rounded text-xs px-2 py-1 sm:px-3 sm:py-2">
+                
+                <option>Yes</option> <option>No</option>
               </select>
-
-              <label className="mb-1 text-base text-gray-700">Upload Rough Layout / Photos</label>
-              <input type="file" className="w-full border rounded px-4 py-1" />
-
+              <label className="mb-1 text-base text-gray-700">
+                Upload Rough Layout / Photos
+              </label>
+              <input type="file" className="w-full text-xs border rounded px-2 py-1 sm:px-3 sm:py-2" />
               <label className="mb-1 text-base text-gray-700">Notes</label>
-              <textarea className="w-full border rounded px-4 py-1 h-9" />
-
+              <textarea className="w-full border rounded px-2 py-1 sm:px-3 sm:py-2 h-10 sm:h-20" />
               <div className="flex justify-center pt-2">
+                
                 <button
                   type="submit"
-                  className="text-white bg-[#ae8c67] hover:bg-[#9b7c5b] px-6 py-3 rounded transition"
+                  className="text-white bg-[#ae8c67] hover:bg-[#9b7c5b] px-6 py-1 rounded transition"
                 >
+                 
                   Submit
                 </button>
               </div>
             </form>
           </div>
         </div>
-
       </div>
     </div>
   );

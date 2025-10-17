@@ -11,13 +11,17 @@ import Gallery from '@/components/Gallery';
 import Testimonials from '@/components/Testimonials';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
+import OurServices from '@/components/OurServices';
+import OttawaInstallation from '@/components/OttawaInstallation';
+import FAQ from '@/components/FAQ';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
       <Hero />
-      <SolidWoodCabinets />
+      <OttawaInstallation />
+      {/* <SolidWoodCabinets /> */}
       <FeaturedShowcase />
       <FreeKitchenDesign />
       <HowItWorks />
@@ -25,7 +29,9 @@ export default function Home() {
       <ChooseYourStyle />
       <DIYVideos />
       <Gallery />
+      <OurServices />
       <Testimonials />
+      <FAQ />
       <CTA />
       <Footer />
     </div>

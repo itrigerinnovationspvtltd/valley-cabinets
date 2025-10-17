@@ -36,6 +36,24 @@ const galleryItems = [
     alt: 'Sage Green Kitchen',
     title: 'Sage Green Kitchen',
     description: 'Fresh and contemporary look'
+  },
+  {
+    src: '/Web Images/whitewater-bay/E1-1.jpg',
+    alt: 'whitewater-bay Kitchen',
+    title: 'WhiteWater bay Kitchen',
+    description: 'Rich and dramatic finish'
+  },
+  {
+    src: '/Web Images/Apline Mist/Alpine3.jpeg',
+    alt: 'Apline Mist Kitchen',
+    title: 'Apline Mist Kitchen',
+    description: 'Fresh and contemporary look'
+  },
+  {
+    src: '/Web Images/Maple Vale/maple2.jpeg',
+    alt: 'Maple vale Kitchen',
+    title: 'Maple Vale Kitchen',
+    description: 'Clean and Bright Finish'
   }
 ];
 

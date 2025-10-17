@@ -76,29 +76,15 @@ export default function Testimonials() {
   );
 
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
       
-
+         <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold text-[#0a2e29] text-center pb-10 sm:pb-14'>What Our Customers Are Saying</h1>
         {/* Testimonials Grid - 1 Row Layout */}
-        <div className="grid grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-10 p-4 sm:p-6 md:p-9">
           {getCurrentTestimonials().slice(0, 4).map((testimonial, index) => (
-            <div key={index} className="flex flex-col items-center">
-              {/* Profile Picture */}
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center mb-6">
-                <span className="text-2xl font-bold text-slate-600">
-                  {testimonial.name.split(' ').map(n => n[0]).join('')}
-                </span>
-              </div>
+            <div key={index} className="flex flex-col justify-between bg-gray-100 py-6 px-5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               
-              {/* Name and Title */}
-              <div className="text-center mb-4">
-                <h4 className="text-lg font-bold text-black mb-1">{testimonial.name}</h4>
-                <p className="text-slate-500 text-sm font-medium">{testimonial.title}</p>
-              </div>
-              
-              {/* Separator Line */}
-              <div className="w-16 h-px bg-slate-300 mx-auto mb-4"></div>
               
               {/* Rating */}
               <div className="flex items-center justify-center mb-6">
@@ -108,17 +94,31 @@ export default function Testimonials() {
               </div>
               
               {/* Review Text */}
-              <p className="text-black leading-relaxed text-center font-medium">
+              <p className="text-black leading-relaxed italic text-center font-medium text-sm sm:text-base">
                 &ldquo;{testimonial.text}&rdquo;
               </p>
+              <div className='flex gap-3 pt-7 items-center justify-center sm:justify-start'>
+              {/* Profile Picture */}
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center mb-0 sm:mb-6">
+                <span className="text-base sm:text-xl font-bold text-slate-600">
+                  {testimonial.name.split(' ').map(n => n[0]).join('')}
+                </span>
+              </div>
+              
+              {/* Name and Title */}
+              <div className="text-left sm:text-center mb-2 sm:mb-4">
+                <h4 className="text-sm sm:text-base font-bold text-black mb-1">{testimonial.name}</h4>
+                <p className="text-slate-500 text-xs font-medium">{testimonial.title}</p>
+              </div>
+              </div>
             </div>
           ))}
         </div>
 
         {/* Bottom Navigation Bar */}
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-0">
           {/* Previous/Next Controls */}
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-6 sm:pl-10">
             <button
               onClick={prevSlide}
               className="text-slate-600 hover:text-slate-800 transition-colors duration-300 font-medium"
@@ -148,7 +148,7 @@ export default function Testimonials() {
           </div>
 
           {/* Customer Avatars */}
-          <div className="flex items-center space-x-3">
+          <div className="hidden sm:flex items-center space-x-3 sm:pr-10">
             <div className="flex -space-x-1">
               {testimonials.slice(0, 3).map((_, index) => (
                 <div key={index} className="w-8 h-8 rounded-full bg-gradient-to-br from-slate-200 to-slate-300 border-2 border-white flex items-center justify-center">
