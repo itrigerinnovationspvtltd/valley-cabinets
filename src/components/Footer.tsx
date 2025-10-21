@@ -10,8 +10,8 @@ export default function Footer() {
               Valley Cabinet Supply
             </h3>
             <p className="text-slate-300 mb-4 max-w-lg leading-relaxed text-base">
-              Solid Wood Cabinets at Amazing Prices, Shipped to Your Door. Serving the Ottawa Valley, Ottawa, Toronto, Montreal and most Canadian provinces with premium quality and exceptional service
-            </p>
+              Solid Wood Cabinets at Amazing Prices, Shipped to Your Door. Serving the Ottawa Valley, Ottawa, Toronto, Montreal and most Canadian provinces with premium quality and exceptional service 
+               </p>
           </div>
 
           <div>
