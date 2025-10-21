@@ -60,7 +60,7 @@ export default function FeaturedShowcase() {
     <section className="py-24 bg-gradient-to-br from-white to-slate-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-slate-800 mb-6">
+          <h2 className="text-5xl font-bold text-[#172128] mb-6">
             Featured Collections
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
@@ -88,7 +88,7 @@ export default function FeaturedShowcase() {
               {/* Content */}
               <div className={`flex flex-col justify-center ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                 <div className="max-w-lg">
-                  <h3 className="text-4xl font-bold text-slate-800 mb-6">
+                  <h3 className="text-4xl font-bold text-[#172128] mb-6">
                     {item.name}
                   </h3>
                   
@@ -97,7 +97,8 @@ export default function FeaturedShowcase() {
                   </p>
 
                   <div className="mb-8">
-                    <h4 className="text-xl font-semibold text-slate-800 mb-4">Key Features:</h4>
+                    <h4 className="text-xl font-semibold text-[#172128] mb-4">Key Features:</h4>
+                    
                     <ul className="space-y-3">
                       {item.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-center text-slate-600">
@@ -109,10 +110,10 @@ export default function FeaturedShowcase() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <div className="bg-slate-100 rounded-xl px-6 py-4">
-                      <p className="text-2xl font-bold text-slate-800">{item.price}</p>
+                    <div className="bg-[#EBEBEB] rounded-xl px-6 py-4">
+                      <p className="text-2xl font-bold text-[#172128]">{item.price}</p>
                     </div>
-                    <button className="bg-slate-800 text-white px-8 py-4 rounded-xl font-semibold hover:bg-slate-700 transition-colors duration-300 flex items-center justify-center">
+                    <button className="bg-[#AE9F8F] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#79654F] transition-colors duration-300 flex items-center justify-center">
                       View Collection
                       <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

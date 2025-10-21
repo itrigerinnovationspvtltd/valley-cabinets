@@ -32,7 +32,7 @@ export default function SolidWoodCabinets() {
     <section className="py-24 bg-gradient-to-br from-white to-slate-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-slate-800 mb-6">
+          <h2 className="text-5xl font-bold text-[#172128] mb-6">
             Solid Wood Cabinets at Great Prices
           </h2>
           <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed mb-8">
@@ -76,7 +76,7 @@ export default function SolidWoodCabinets() {
               </div>
 
               <div className="text-center">
-                <h3 className="text-xl font-bold text-slate-800 mb-2">{cabinet.name}</h3>
+                <h3 className="text-xl font-bold text-[#172128] mb-2">{cabinet.name}</h3>
               </div>
             </div>
           ))}

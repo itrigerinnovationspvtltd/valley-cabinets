@@ -79,7 +79,7 @@ export default function Testimonials() {
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4">
       
-         <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold text-[#0a2e29] text-center pb-10 sm:pb-14'>What Our Customers Are Saying</h1>
+         <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold text-[#172128] text-center pb-10 sm:pb-14'>What Our Customers Are Saying</h1>
         {/* Testimonials Grid - 1 Row Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-10 p-4 sm:p-6 md:p-9">
           {getCurrentTestimonials().slice(0, 4).map((testimonial, index) => (
@@ -99,15 +99,15 @@ export default function Testimonials() {
               </p>
               <div className='flex gap-3 pt-7 items-center justify-center sm:justify-start'>
               {/* Profile Picture */}
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center mb-0 sm:mb-6">
-                <span className="text-base sm:text-xl font-bold text-slate-600">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#172128] flex items-center justify-center mb-0 sm:mb-6">
+                <span className="text-base sm:text-xl font-bold text-white">
                   {testimonial.name.split(' ').map(n => n[0]).join('')}
                 </span>
               </div>
               
               {/* Name and Title */}
               <div className="text-left sm:text-center mb-2 sm:mb-4">
-                <h4 className="text-sm sm:text-base font-bold text-black mb-1">{testimonial.name}</h4>
+                <h4 className="text-sm sm:text-base font-bold text-[#172128] mb-1">{testimonial.name}</h4>
                 <p className="text-slate-500 text-xs font-medium">{testimonial.title}</p>
               </div>
               </div>

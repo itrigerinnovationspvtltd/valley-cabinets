@@ -21,10 +21,10 @@ export default function Home() {
             Solid Wood Cabinets at Great Prices
           </h1>
           <div className="flex  sm:flex-row gap-4 justify-center pt-20 sm:pt-0">
-            <button className="bg-[#59534f] hover:bg-[#59535f] text-white px-6 py-3 rounded-lg font-medium shadow w-auto text-xs sm:text-lg">
+            <button className="bg-[#AE9F8F] hover:bg-[#79654F] text-white px-6 py-3 rounded-lg font-medium shadow w-auto text-xs sm:text-lg">
               FREE 3D DESIGN
             </button>
-            <button className="bg-white text-gray-800 hover:bg-gray-100 px-2 sm:px-6 py-3 rounded-lg font-medium shadow w-auto text-xs sm:text-lg">
+            <button className="bg-white text-[#333333] hover:bg-[#EBEBEB] px-2 sm:px-6 py-3 rounded-lg font-medium shadow w-auto text-xs sm:text-lg">
               ORDER SAMPLES
             </button>
           </div>
@@ -37,8 +37,8 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:ga8 max-w-5xl mx-auto">
           {/* Feature 1 */}
           <div className="flex flex-col items-center bg-gray-100 rounded-2xl p-6 sm:p-8">
-            <div className="text-4xl mb-4 text-[#59534f]"><CheckCircle/></div>
-            <h3 className="text-lg sm:text-xl font-semibold mb-2">No MDF or Thermofoil</h3>
+            <div className="text-4xl mb-4 text-[#172128]"><CheckCircle/></div>
+            <h3 className="text-lg sm:text-xl font-semibold mb-2 text-[#172128]">No MDF or Thermofoil</h3>
             <p className="text-gray-600 text-sm sm:text-base">
               Our cabinets are constructed from solid wood, with no MDF or thermofoil materials used.
             </p>
@@ -46,8 +46,8 @@ export default function Home() {
 
           {/* Feature 2 */}
           <div className="flex flex-col items-center  bg-gray-100 rounded-2xl p-6 sm:p-8">
-            <div className="text-4xl mb-4 text-[#59534f]"><MapPin/></div>
-            <h3 className="text-lg sm:text-xl font-semibold mb-2">Ottawa Installation Service</h3>
+            <div className="text-4xl mb-4 text-[#172128]"><MapPin/></div>
+            <h3 className="text-lg sm:text-xl font-semibold mb-2 text-[#172128]">Ottawa Installation Service</h3>
             <p className="text-gray-600 text-sm sm:text-base">
               We provide professional installation services in Ottawa and the surrounding areas.
             </p>
@@ -55,8 +55,8 @@ export default function Home() {
 
           {/* Feature 3 */}
           <div className="flex flex-col items-center  bg-gray-100 rounded-2xl p-6 sm:p-8">
-            <div className="text-3xl mb-4 text-[#59534f]"><DollarSign/></div>
-            <h3 className="text-lg sm:text-xl font-semibold mb-2">Affordable Quality</h3>
+            <div className="text-3xl mb-4 text-[#172128]"><DollarSign/></div>
+            <h3 className="text-lg sm:text-xl font-semibold mb-2 text-[#172128]">Affordable Quality</h3>
             <p className="text-gray-600 text-sm sm:text-base">
               Get premium, solid wood cabinetry at prices that won’t break the bank.
             </p>
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
       {/* Ottawa Installation Section */}
 <section className="py-10 px-4 sm:px-6 md:px-12 text-center bg-white">
-  <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 text-[#172128]">
     Proudly Installing In Ottawa
   </h2>
   <p className="text-gray-700 max-w-2xl mx-auto mb-10 text-base sm:text-lg">
@@ -84,7 +84,7 @@ export default function Home() {
     </div>
   </div>
 
-  <p className="text-gray-800 text-base sm:text-lg font-bold mt-8">
+  <p className="text-[#172128] text-base sm:text-lg font-bold mt-8">
     Solid wood construction. No MDF or Thermafoil.
   </p>
 </section>

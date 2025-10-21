@@ -23,14 +23,14 @@ export default function HowItWorks() {
             </div>
             <div className="flex flex-col justify-between h-full">
               <div>
-                <h3 className="text-4xl font-bold text-slate-800 mb-6">
+                <h3 className="text-4xl font-bold text-[#172128] mb-6">
                   How it Works
                 </h3>
                 <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                   Save time by having us install the cabinets or save money by installing them yourself
                 </p>
               </div>
-              <button className="border-2 border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+              <button className="border-1 border-[#AE9F8F] bg-[#AE9F8F] text-white hover:bg-[#79654F] hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl">
                 LEARN WHAT&apos;S BEST FOR YOU
               </button>
             </div>
@@ -54,7 +54,7 @@ export default function HowItWorks() {
             </div>
             <div className="flex flex-col justify-between h-full">
               <div>
-                <h3 className="text-4xl font-bold text-slate-800 mb-6">
+                <h3 className="text-4xl font-bold text-[#172128] mb-6">
                   Wood vs MDF
                 </h3>
                 <p className="text-xl text-slate-600 mb-8 leading-relaxed">
@@ -62,7 +62,7 @@ export default function HowItWorks() {
                 </p>
               </div>
 
-              <button className="border-2 border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+              <button className="border-1 bg-[#AE9F8F] border-[#AE9F8F] text-white hover:bg-[#79654F] hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl">
                 READ ABOUT OUR CABINETS
               </button>
             </div>

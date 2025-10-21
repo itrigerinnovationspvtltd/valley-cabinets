@@ -106,23 +106,23 @@ export default function Hero() {
         {/* Left Side - Text Content (1 part) */}
         <div className="md:col-span-1 flex flex-col justify-center space-y-6 px-6 sm:px-12 md:px-28 text-center md:text-left">
          
-          <h1 className="text-3xl sm:text-5xl md:text-5xl font-bold text-[#0a2e29]">
+          <h1 className="text-3xl sm:text-5xl md:text-5xl font-bold text-[#172128]">
             
             Solid Wood Cabinets at Great Prices.
           </h1>
           <p className="text-gray-700 text-base sm:text-lg">
            
-            <span className="font-bold">No MDF or thermofoil.</span> Plywood
+            <span className="font-bold text-[#172128]">No MDF or thermofoil.</span> Plywood
             boxes, dovetail drawers, soft-close hardware— and professional
             Ottawa-area installation.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-2 justify-center md:justify-start">
             
-            <button className="bg-green-900 text-white px-4 py-2 rounded hover:bg-green-800 transition w-full sm:w-auto ">
+            <button className="bg-[#AE9F8F] text-white px-4 py-2 rounded hover:bg-[#79654f] transition w-full sm:w-auto ">
               
               FREE 3D DESIGN
             </button>
-            <button className="border border-green-900 text-green-900 px-2 py-2 rounded hover:bg-green-50 transition w-full sm:w-auto">
+            <button className="border border-[#EBEBEB] text-[#333333] px-2 py-2 rounded hover:bg-[#EBEBEB] transition w-full sm:w-auto">
               
               ORDER SAMPLES
             </button>
@@ -133,7 +133,7 @@ export default function Hero() {
           
           <div className="bg-white shadow-md flex flex-col items-center m-4 sm:m-8 p-6 sm:p-8 border border-gray-200 w-full max-w-sm sm:max-w-md rounded-3xl">
             
-            <h2 className="text-xl sm:text-2xl font-semibold mb-4">Free 3D Design</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-[#172128]">Free 3D Design</h2>
             <form className="space-y-1 sm:space-y-3 w-full">
               
               <label className="text-base text-gray-700">Name</label>
@@ -163,7 +163,7 @@ export default function Hero() {
                 
                 <button
                   type="submit"
-                  className="text-white bg-[#ae8c67] hover:bg-[#9b7c5b] px-6 py-1 rounded transition"
+                  className="text-white bg-[#AE9F8F] hover:bg-[#79654f] px-6 py-1 rounded transition"
                 >
                  
                   Submit

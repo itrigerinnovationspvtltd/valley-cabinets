@@ -9,9 +9,9 @@ export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a2e29]  shadow-md ">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#172128]  shadow-md ">
       <div className="max-w-3xl sm:max-w-full mx-auto px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
   <Link href="/">
@@ -26,14 +26,14 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#consultation" className="text-white hover:text-amber-100 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
+            <a href="#consultation" className="text-white hover:text-[#AE9F8F] px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
               <b> Free 3D</b> Design
             </a>
-            <a href="#samples" className="text-white hover:text-amber-100 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
+            <a href="#samples" className="text-white hover:text-[#AE9F8F] px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
               Order Samples
             </a>
             
-            <a href="tel:6139170497" className="flex items-center gap-2 text-white hover:text-amber-100 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
+            <a href="tel:6139170497" className="flex items-center gap-2 text-white hover:text-[#AE9F8F] px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
               <Phone /> 613-917-0497
             </a>
           </div>

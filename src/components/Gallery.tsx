@@ -62,7 +62,7 @@ export default function Gallery() {
     <section className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-slate-800 mb-6">
+          <h2 className="text-5xl font-bold text-[#172128] mb-6">
             Our Premium Cabinet Gallery
           </h2>
           <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">

@@ -23,16 +23,16 @@ export default function OurServices() {
   return (
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 text-center ">
-        <h2 className="text-5xl  font-bold text-[#0a2e29] pb-16">Our Services</h2>
+        <h2 className="text-5xl  font-bold text-[#172128] pb-16">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
               className="flex flex-col items-center text-center space-y-4"
             >
-              <div className="bg-green-900 p-5 rounded-md">{service.icon}</div>
-              <h3 className="text-2xl font-bold text-gray-900">{service.title}</h3>
-              <p className="text-gray-800 max-w-xs">{service.description}</p>
+              <div className="bg-[#172128] p-5 rounded-md">{service.icon}</div>
+              <h3 className="text-2xl font-bold text-[#172128]">{service.title}</h3>
+              <p className="text-[#172128] max-w-xs">{service.description}</p>
             </div>
           ))}
         </div>

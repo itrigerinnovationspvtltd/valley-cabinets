@@ -2,11 +2,11 @@ const quickLinks = ['About Us', 'Assembly and Shipping', 'Solid Wood', 'Kitchen 
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0a2e29] text-white pt-20">
+    <footer className="bg-[#172128] text-white pt-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-3 text-white">
+            <h3 className="text-2xl font-bold mb-3 text-[#AE9F8F]">
               Valley Cabinet Supply
             </h3>
             <p className="text-slate-300 mb-4 max-w-lg leading-relaxed text-base">
@@ -15,7 +15,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-2xl font-bold mb-3 text-slate-300">
+            <h4 className="text-2xl font-bold mb-3 text-[#AE9F8F]">
               Quick Links
             </h4>
             <ul className="space-y-2 text-slate-300">
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-2xl font-bold mb-3 text-white">
+            <h4 className="text-2xl font-bold mb-3 text-[#AE9F8F]">
               Contact Info
             </h4>
             <div className="space-y-2 text-slate-300">

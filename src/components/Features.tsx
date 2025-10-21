@@ -60,7 +60,7 @@ export default function Features() {
     <section id="consultation" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-slate-800 mb-6">
+          <h2 className="text-5xl font-bold text-[#172128] mb-6">
             Premium Features for Daily Enjoyment
           </h2>
           <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
@@ -78,7 +78,7 @@ export default function Features() {
               <div className="text-slate-600 mb-6 transition-transform duration-300 group-hover:scale-110">
                 {feature.icon}
               </div>
-              <h3 className="text-2xl font-bold text-slate-800 mb-4">
+              <h3 className="text-2xl font-bold text-[#172128] mb-4">
                 {feature.title}
               </h3>
               <p className="text-slate-600 leading-relaxed">

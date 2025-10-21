@@ -50,7 +50,7 @@ export default function ChooseYourStyle() {
     <section id="kitchen" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-slate-800 mb-6">
+          <h2 className="text-5xl font-bold text-[#172128] mb-6">
             Choose Your Style
           </h2>
           <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
@@ -74,7 +74,7 @@ export default function ChooseYourStyle() {
                   <span className="text-sm font-semibold text-slate-900">{style.price}</span>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-slate-800 mb-3">
+              <h3 className="text-2xl font-bold text-[#172128] mb-3">
                 {style.name}
               </h3>
               <p className="text-slate-600 leading-relaxed">
