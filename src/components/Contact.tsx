@@ -3,6 +3,7 @@ export default function Contact() {
     <div id="contact" className="min-h-screen bg-white flex flex-col justify-center items-center pt-28 sm:pt-20">
       <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Left Side - Text Content */}
+        
         <div className="flex flex-col justify-center space-y-6 px-6 sm:px-12 md:px-20 text-center md:text-left">
           <h1 className="text-3xl sm:text-5xl font-bold text-[#172128] sm:py-3">
             Free Kitchen Design and Consultation Services
