@@ -166,12 +166,14 @@ export default function Hero() {
               <label className="mb-1 text-base text-gray-700">Notes</label>
               <textarea className="w-full border rounded px-2 py-1 sm:px-3 sm:py-2 h-10 sm:h-20" />
               <div className="flex justify-center pt-2">
-                <button
+                <a href="#">
+                <button 
                   type="submit"
                   className="text-white bg-[#AE9F8F] hover:bg-[#79654f] px-6 py-1 rounded transition"
                 >
                   Submit
                 </button>
+                </a>
               </div>
             </form>
           </div>
