@@ -1,6 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
-import SolidWoodCabinets from '@/components/SolidWoodCabinets';
+// import SolidWoodCabinets from '@/components/SolidWoodCabinets';
 import FeaturedShowcase from '@/components/FeaturedShowcase';
 import FreeKitchenDesign from '@/components/FreeKitchenDesign';
 import HowItWorks from '@/components/HowItWorks';
@@ -23,14 +23,14 @@ export default function Home() {
       <OttawaInstallation />
       {/* <SolidWoodCabinets /> */}
       <FeaturedShowcase />
+      <OurServices />
+      <Testimonials />
       <FreeKitchenDesign />
       <HowItWorks />
       <Features />
       <ChooseYourStyle />
       <DIYVideos />
       <Gallery />
-      <OurServices />
-      <Testimonials />
       <FAQ />
       <CTA />
       <Footer />
