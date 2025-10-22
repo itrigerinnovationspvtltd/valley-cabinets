@@ -127,7 +127,7 @@ export default function Hero() {
             <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-[#172128]">
               Free 3D Design
             </h2>
-            <form action="https://formsubmit.co/amit.k001122@gmail.com" method="POST" className="space-y-1 sm:space-y-3 w-full">
+            <form className="space-y-1 sm:space-y-3 w-full">
               <label className="text-base text-gray-700">Name</label>
               <input
                 type="text" required
