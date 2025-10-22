@@ -1,6 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
-// import SolidWoodCabinets from '@/components/SolidWoodCabinets';
+import SolidWoodCabinets from '@/components/SolidWoodCabinets';
 import FeaturedShowcase from '@/components/FeaturedShowcase';
 import FreeKitchenDesign from '@/components/FreeKitchenDesign';
 import HowItWorks from '@/components/HowItWorks';
@@ -14,6 +14,7 @@ import Footer from '@/components/Footer';
 import OurServices from '@/components/OurServices';
 import OttawaInstallation from '@/components/OttawaInstallation';
 import FAQ from '@/components/FAQ';
+import Contact from '@/components/Contact';
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <OttawaInstallation />
-      {/* <SolidWoodCabinets /> */}
+      <SolidWoodCabinets />
       <FeaturedShowcase />
       <OurServices />
       <Testimonials />
@@ -31,6 +32,7 @@ export default function Home() {
       <ChooseYourStyle />
       <DIYVideos />
       <Gallery />
+      <Contact />
       <FAQ />
       <CTA />
       <Footer />

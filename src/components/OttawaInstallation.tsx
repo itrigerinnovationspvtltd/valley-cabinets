@@ -21,12 +21,16 @@ export default function Home() {
             Solid Wood Cabinets at Great Prices
           </h1>
           <div className="flex  sm:flex-row gap-4 justify-center pt-20 sm:pt-0">
+            <a href="#contact">
             <button className="bg-[#AE9F8F] hover:bg-[#79654F] text-white px-6 py-3 rounded-lg font-medium shadow w-auto text-xs sm:text-lg">
-              FREE 3D DESIGN
+              BOOK A CONSULTAION
             </button>
+            </a>
+            <a href="#kitchen">
             <button className="bg-white text-[#333333] hover:bg-[#EBEBEB] px-2 sm:px-6 py-3 rounded-lg font-medium shadow w-auto text-xs sm:text-lg">
               ORDER SAMPLES
             </button>
+            </a>
           </div>
         </div>
       </section>

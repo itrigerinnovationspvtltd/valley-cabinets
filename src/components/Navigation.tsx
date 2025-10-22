@@ -26,15 +26,12 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#consultation" className="text-white hover:text-[#AE9F8F] px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
-              <b> Free 3D</b> Design
-            </a>
-            <a href="#samples" className="text-white hover:text-[#AE9F8F] px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
-              Order Samples
-            </a>
             
+            <a href="#contact" className="flex items-center gap-2 text-white hover:text-[#AE9F8F] px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
+             Book a Consultation
+            </a>
             <a href="tel:6139170497" className="flex items-center gap-2 text-white hover:text-[#AE9F8F] px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300">
-              <Phone /> 613-917-0497
+              <Phone /> Contact Us
             </a>
           </div>
 

@@ -38,9 +38,11 @@ export default function SolidWoodCabinets() {
           <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed mb-8">
             No MDF or Thermofoil here. Just modern kitchen cabinets with premium features to fit any budget.
           </p>
+          <a href="#contact">
           <button className="bg-slate-800 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-slate-700 transition-all duration-300 shadow-xl hover:shadow-2xl">
             SHOP KITCHEN & BATHROOM CABINETS
           </button>
+          </a>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

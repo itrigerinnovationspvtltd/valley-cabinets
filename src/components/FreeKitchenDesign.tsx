@@ -63,9 +63,11 @@ export default function FreeKitchenDesign() {
           <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed mb-8">
             Ottawa Valley kitchen cabinets: book an in-home or virtual consultation and within 48 hours we will have a <strong className="text-slate-800">free design ready for your approval</strong>
           </p>
+          <a href="#contact">
           <button className="bg-[#AE9F8F] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#79654F] transition-all duration-300 shadow-xl hover:shadow-2xl">
             BOOK A CONSULTATION
           </button>
+          </a>
         </div>
       </div>
     </section>
