@@ -3,11 +3,6 @@ import Hero from '@/components/Hero';
 import SolidWoodCabinets from '@/components/SolidWoodCabinets';
 import FeaturedShowcase from '@/components/FeaturedShowcase';
 import FreeKitchenDesign from '@/components/FreeKitchenDesign';
-import HowItWorks from '@/components/HowItWorks';
-import Features from '@/components/Features';
-import ChooseYourStyle from '@/components/ChooseYourStyle';
-import DIYVideos from '@/components/DIYVideos';
-import Gallery from '@/components/Gallery';
 import Testimonials from '@/components/Testimonials';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
@@ -27,11 +22,6 @@ export default function Home() {
       <OurServices />
       <Testimonials />
       <FreeKitchenDesign />
-      <HowItWorks />
-      <Features />
-      <ChooseYourStyle />
-      <DIYVideos />
-      <Gallery />
       <Contact />
       <FAQ />
       <CTA />

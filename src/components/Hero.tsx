@@ -97,88 +97,139 @@
 //   );
 // }
 
+"use client";
+import { useEffect, useState } from "react";
+
 export default function Hero() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  // Show popup after 10 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 10000); // 10 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="min-h-screen bg-white flex flex-col justify-center items-center pt-28 sm:pt-20">
-      <div className="w-full  mx-auto grid grid-cols-1 md:grid-cols-3 ">
-        {/* Left Side - Text Content (1 part) */}
-        <div className="md:col-span-1 flex flex-col justify-center space-y-6 px-6 sm:px-12 md:px-28 text-center md:text-left">
-          <h1 className="text-3xl sm:text-5xl md:text-5xl font-bold text-[#172128]">
-            Solid Wood Cabinets at Great Prices.
-          </h1>
-          <p className="text-gray-700 text-base sm:text-lg">
-            <span className="font-bold text-[#172128]">
-              No MDF or thermofoil.
-            </span>{" "}
-            Plywood boxes, dovetail drawers, soft-close hardware— and
-            professional Ottawa-area installation.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-2 justify-center md:justify-start">
-            <a href="#contact">
-            <button className="bg-[#AE9F8F] text-white px-4 py-2 rounded hover:bg-[#79654f] transition w-full sm:w-auto ">
-              BOOK A CONSULTATION
-            </button>
-            </a>
-          </div>
-        </div>
-        {/* Right Side - Form with Background (2 parts) */}
-        <div className="col-span-2 h-full bg-cover bg-center rounded flex items-center justify-center sm:justify-end p-0 sm:pr-16 shadow-l-[200px] shadow-[0_0_30px] shadow-gray-500 bg-[url('/Web%20Images/whitewater-bay/E1-1.jpg')] mt-8 sm:mt-0 ">
-          <div className="bg-white shadow-md flex flex-col items-center m-4 sm:m-8 p-6 sm:p-8 border border-gray-200 w-full max-w-sm sm:max-w-md rounded-3xl">
-            <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-[#172128]">
-              Free 3D Design
-            </h2>
-            <form className="space-y-1 sm:space-y-3 w-full">
-              <label className="text-base text-gray-700">Name</label>
-              <input
-                type="text" required
-                className="w-full border rounded px-2 sm:px-3 sm:py-2"
-              />
-              <label className=" text-base text-gray-700">Email</label>
-              <input
-                type="email" required
-                className="w-full border rounded px-2 sm:px-3 sm:py-2"
-              />
-              <label className="text-base text-gray-700">Phone</label>
-              <input
-                type="tel" required
-                className="w-full border rounded px-2  sm:px-3 sm:py-2"
-              />
-              <label className=" text-base text-gray-700">
-                City / Neighbourhood
-              </label>
-              <input
-                type="text" required
-                className="w-full border rounded px-2 sm:px-3 sm:py-2"
-              />
-              <label className="text-base text-gray-700">
-                Installation Needed?
-              </label>
-              <select className="w-full border rounded text-xs px-2 py-1 sm:px-3 sm:py-2">
-                <option>Yes</option> <option>No</option>
-              </select>
-              <label className="mb-1 text-base text-gray-700">
-                Upload Rough Layout / Photos
-              </label>
-              <input
-                type="file"
-                className="w-full text-xs border rounded px-2 py-1 sm:px-3 sm:py-2"
-              />
-              <label className="mb-1 text-base text-gray-700">Notes</label>
-              <textarea className="w-full border rounded px-2 py-1 sm:px-3 sm:py-2 h-10 sm:h-20" />
-              <div className="flex justify-center pt-2">
-                <a href="#">
-                <button 
-                  type="submit"
-                  className="text-white bg-[#AE9F8F] hover:bg-[#79654f] px-6 py-1 rounded transition"
-                >
-                  Submit
+    <>
+      <div className="min-h-screen bg-white flex flex-col justify-center items-center pt-28 sm:pt-20">
+        <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-3">
+          {/* Left Side - Text Content */}
+          <div className="md:col-span-1 flex flex-col justify-center space-y-6 px-6 sm:px-12 md:px-28 text-center md:text-left">
+            <h1 className="text-3xl sm:text-5xl md:text-5xl font-bold text-[#172128]">
+              Solid Wood Cabinets at Great Prices.
+            </h1>
+            <p className="text-gray-700 text-base sm:text-lg">
+              <span className="font-bold text-[#172128]">No MDF or thermofoil.</span>{" "}
+              Plywood boxes, dovetail drawers, soft-close hardware—and
+              professional Ottawa-area installation.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-2 justify-center md:justify-start">
+              <a href="#contact">
+                <button className="bg-[#AE9F8F] text-white px-4 py-2 rounded hover:bg-[#79654f] transition w-full sm:w-auto">
+                  BOOK A CONSULTATION
                 </button>
-                </a>
-              </div>
-            </form>
+              </a>
+            </div>
+          </div>
+
+          {/* Right Side - Form with Background */}
+          <div className="col-span-2 h-full bg-cover bg-center rounded flex items-center justify-center sm:justify-end p-0 sm:pr-16 bg-[url('/Web%20Images/whitewater-bay/E1-1.jpg')] mt-8 sm:mt-0">
+            <div className="bg-white shadow-md flex flex-col items-center m-4 sm:m-8 p-6 sm:p-8 border border-gray-200 w-full max-w-sm sm:max-w-md rounded-3xl">
+              <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-[#172128]">
+                Free 3D Design
+              </h2>
+              <form className="space-y-3 w-full">
+                <label className="text-base text-gray-700">Name</label>
+                <input type="text" required className="w-full border rounded px-3 py-2" />
+                <label className="text-base text-gray-700">Email</label>
+                <input type="email" required className="w-full border rounded px-3 py-2" />
+                <label className="text-base text-gray-700">Phone</label>
+                <input type="tel" required className="w-full border rounded px-3 py-2" />
+                <label className="text-base text-gray-700">City / Neighbourhood</label>
+                <input type="text" required className="w-full border rounded px-3 py-2" />
+                <label className="text-base text-gray-700">Installation Needed?</label>
+                <select className="w-full border rounded px-3 py-2">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+                <label className="text-base text-gray-700">Upload Rough Layout / Photos</label>
+                <input type="file" className="w-full text-xs border rounded px-2 py-2" />
+                <label className="text-base text-gray-700">Notes</label>
+                <textarea className="w-full border rounded px-3 py-2 h-20" />
+                <div className="flex justify-center pt-2">
+                  <button
+                    type="submit"
+                    className="text-white bg-[#AE9F8F] hover:bg-[#79654f] px-6 py-2 rounded transition"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+      {/* Popup Modal */}
+      {showPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-2xl shadow-lg w-[90%] max-w-md p-6 relative animate-fadeIn">
+            {/* Close Button */}
+            <button
+              onClick={() => setShowPopup(false)}
+              className="absolute top-3 right-3 text-gray-500 hover:text-black text-xl"
+            >
+              ✕
+            </button>
+
+            <h2 className="text-2xl md:text-3xl font-bold text-[#172128]  md:mb-4 text-center">
+                Request a Design Consultation
+              </h2>
+              <p className="text-gray-600 text-center text-sm mb-4 md:mb-8">
+                Fill out the form below and our design expert will reach out to you.
+              </p>
+            <form onSubmit={(e) => {
+          e.preventDefault(); // stop page refresh
+          alert("Form submitted successfully!");
+          setShowPopup(false); 
+        }}
+            className="space-y-2">
+              <label className="block text-sm font-medium mb-2">Your Name</label>
+              <input
+                    type="text"
+                    name="Name"
+                    required
+                    placeholder="Enter your name"
+                    className="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-gray-600"
+                  />
+                  <label className="block text-sm font-medium mb-2">Your Email</label>
+              <input
+                    type="email"
+                    name="Email"
+                    required
+                    placeholder="Enter your email"
+                    className="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-gray-600"
+                  />
+                  <label className="block text-sm font-medium mb-2">Message</label>
+             <textarea
+                    name="Message"
+                    required
+                    placeholder="Tell us about your project..."
+                    className="w-full border border-gray-300 rounded-lg py-3 px-4 h-26 md:h-32 resize-none focus:outline-none focus:ring-2 focus:ring-gray-600"
+                  />
+              <button
+                type="submit"
+                className="w-full bg-[#AE9F8F] text-white py-2 rounded hover:bg-[#79654f] transition"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+    </>
   );
 }

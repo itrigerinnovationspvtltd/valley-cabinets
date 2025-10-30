@@ -1,3 +1,5 @@
+import { Phone } from "lucide-react";
+
 const quickLinks = ['About Us', 'Assembly and Shipping', 'Solid Wood', 'Kitchen Planning', 'Returns & Exchanges', 'Warranty'];
 
 export default function Footer() {
@@ -35,7 +37,7 @@ export default function Footer() {
             </h4>
             <div className="space-y-2 text-slate-300">
               <div className="flex items-center">
-                <span className="text-base">613-917-0497</span>
+                <a href="tel:613-917-0497" className="text-base flex gap-2"><Phone/> 613-917-0497</a>
               </div>
               <div className="flex items-center">
                 <span className="text-base">info@valleycabinets.ca</span>
