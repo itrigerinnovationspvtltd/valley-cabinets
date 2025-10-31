@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 const testimonials = [
   {
@@ -8,28 +9,28 @@ const testimonials = [
     title: 'Brand Manager, Vellox',
     rating: 5,
     text: 'From design to installation, Valley Cabinet Supply brought our kitchen to life with precision and soul. Couldn\'t have asked for a better partner.',
-    avatar: '/images/testimonial-1.jpg'
+    avatar: '/testimonial-1.jpeg'
   },
   {
     name: 'Marina Cristofferson',
     title: 'CEO, Lemmon',
     rating: 5,
     text: 'The Valley Cabinet team felt like an extension of our own. They brought clarity and creativity to every step of the process. We get compliments on our kitchen almost daily now!',
-    avatar: '/images/testimonial-2.jpg'
+    avatar: '/testimonial-2.jpeg'
   },
   {
     name: 'Damian Bennett',
     title: 'Founder, LINX',
     rating: 5,
     text: 'Our kitchen renovation doubled our home value in less than a month after Valley Cabinet Supply took over our project. Their eye for design and strategic planning is unmatched.',
-    avatar: '/images/testimonial-3.jpg'
+    avatar: '/testimonial-3.jpeg'
   },
   {
     name: 'Mia Patakis',
     title: 'Design Director, Summa',
     rating: 5,
     text: 'As a startup, we needed fast, smart, and beautiful. Valley Cabinet Supply delivered all three, and then some. We\'ll be back for round two soon. Incredible!',
-    avatar: '/images/testimonial-4.jpg'
+    avatar: '/testimonial-4.jpeg'
   },
   {
     name: 'Jennifer Smith',
@@ -99,11 +100,15 @@ export default function Testimonials() {
               </p>
               <div className='flex gap-3 pt-7 items-center justify-center sm:justify-start'>
               {/* Profile Picture */}
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#172128] flex items-center justify-center mb-0 sm:mb-6">
-                <span className="text-base sm:text-xl font-bold text-white">
-                  {testimonial.name.split(' ').map(n => n[0]).join('')}
-                </span>
-              </div>
+               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden flex-shrink-0">
+                  <Image
+                    src={testimonial.avatar} 
+                    alt={testimonial.name}
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               
               {/* Name and Title */}
               <div className="text-left sm:text-center mb-2 sm:mb-4">

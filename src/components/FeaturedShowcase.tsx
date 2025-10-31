@@ -28,31 +28,44 @@ const showcaseItems = [
     price: 'Starting at $1,600/linear ft'
   },
   {
-    id: 'cobblestone-shaker',
-    name: 'Cobblestone Shaker',
-    image: '/Web Images/cobblestone-shaker/S5-A-1.jpg',
-    description: 'Our Cobblestone Shaker collection combines classic shaker design with a sophisticated cobblestone finish. This unique texture adds depth and character to your kitchen while maintaining the clean lines and functionality that shaker cabinets are known for.',
-    features: [
-      'Classic shaker design',
-      'Unique cobblestone texture',
-      'Versatile color options',
-      'Easy installation'
-    ],
-    price: 'Starting at $1,300/linear ft'
+    id: 'stone-harbour',
+    name: 'Stone Harbour',
+    image: '/Web Images/stone-harbour/E2-Charcoal-Gallery1.jpg',
+    description: 'The Stone Harbour collection offers a perfect balance of warmth and sophistication. Featuring a rich, neutral gray tone with refined shaker styling, it adds depth and character to any kitchen while maintaining a clean, contemporary aesthetic.',
+  features: [
+    'Smooth neutral gray finish',
+    'Elegant shaker-style design',
+    'Crafted for durability and timeless appeal',
+    'Customizable layout and sizing options'
+  ],
+  price: 'Starting at $1,750/linear ft'
   },
   {
-    id: 'chateau-blanc-gallery',
-    name: 'Chateau Blanc Gallery',
-    image: '/Web Images/chateau-blanc/H9-Pearl-Glazed-Gallery1.jpg',
-    description: 'The Chateau Blanc Gallery collection showcases our most elegant and refined cabinet designs. With its pearl-glazed finish and sophisticated styling, this collection transforms any kitchen into a luxurious culinary haven that reflects your refined taste.',
-    features: [
-      'Pearl-glazed finish',
-      'Luxury design elements',
-      'Premium hardware included',
-      'Custom sizing available'
-    ],
-    price: 'Starting at $1,800/linear ft'
-  }
+  id: 'whitewater-bay',
+  name: 'Whitewater Bay',
+  image: '/Web Images/whitewater-bay/E1-5.jpg',
+  description: 'The Whitewater Bay collection embodies timeless coastal elegance with its crisp white finish and subtle detailing. Designed to bring a bright, airy feel to any kitchen, this collection combines classic shaker styling with modern durability and effortless sophistication.',
+  features: [
+    'Crisp white shaker finish',
+    'Bright and airy coastal design',
+    'Durable construction with premium materials',
+    'Available in multiple configurations'
+  ],
+  price: 'Starting at $1,700/linear ft'
+},
+{
+  id: 'sage-green',
+  name: 'Sage Green',
+  image: '/Web Images/Sage Green/sage-hero-edit.jpg',
+  description: 'The Sage Green collection introduces a refreshing touch of nature-inspired charm to your kitchen. With its soft green hue and classic shaker craftsmanship, this design creates a calming, elegant atmosphere that blends traditional warmth with modern simplicity.',
+  features: [
+    'Soft, nature-inspired green finish',
+    'Classic shaker-style cabinetry',
+    'Premium build quality and finish',
+    'Perfect for modern and transitional interiors'
+  ],
+  price: 'Starting at $1,750/linear ft'
+}
 ];
 
 export default function FeaturedShowcase() {
@@ -111,14 +124,16 @@ export default function FeaturedShowcase() {
 
                   <div className="flex flex-col sm:flex-row gap-4">
                     <div className="bg-[#EBEBEB] rounded-xl px-6 py-4">
-                      <p className="text-2xl font-bold text-[#172128]">{item.price}</p>
+                      <a href='#contact' className=" rounded-xl font-semibold transition-colors duration-300 flex items-center justify-center">
+                        Book a Consultation
+                      </a>
                     </div>
-                    <button className="bg-[#AE9F8F] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#79654F] transition-colors duration-300 flex items-center justify-center">
-                      View Collection
+                    <a href='https://valleycabinets.ca/collections/samples' className="bg-[#AE9F8F] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#79654F] transition-colors duration-300 flex items-center justify-center">
+                      Order Sample
                       <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

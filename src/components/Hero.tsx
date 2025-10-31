@@ -254,6 +254,16 @@ export default function Hero() {
                 placeholder="Enter your email"
                 className="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-gray-600"
               />
+              <label className="block text-sm font-medium mb-2">
+                Phone
+              </label>
+              <input
+                type="tel"
+                name="tel"
+                required
+                placeholder="Enter your phone number"
+                className="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-gray-600"
+              />
               <label className="block text-sm font-medium mb-2">Message</label>
               <textarea
                 name="Message"

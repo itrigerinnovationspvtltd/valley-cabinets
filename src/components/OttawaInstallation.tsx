@@ -6,17 +6,17 @@ export default function Home() {
   return (
     <main className="bg-white text-gray-900 pt-5 sm:pt-10 shadow-2xl">
       {/* Hero Section */}
-      <section className="relative h-[70vh] sm:h-[60vh] flex items-center justify-center text-center bg-gray-100">
-        {/* Background image */}
+      {/* <section className="relative h-[70vh] sm:h-[60vh] flex items-center justify-center text-center bg-gray-100"> */}
+        {/* Background image
         <Image
           src="/Web Images/whitewater-bay/E1-1.jpg" 
           alt="Kitchen cabinets"
           fill
           className="object-cover brightness-75 shadow-2xl"
-        />
+        /> */}
 
         {/* Overlay content */}
-        <div className="relative z-10 px-4 sm:px-6">
+        {/* <div className="relative z-10 px-4 sm:px-6">
           <h1 className="text-3xl sm:text-4xl md:text-6xl sm:w-[658px] font-bold text-white mb-6 drop-shadow-lg">
             Solid Wood Cabinets at Great Prices
           </h1>
@@ -33,7 +33,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Features Section */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 md:px-12 text-center">
