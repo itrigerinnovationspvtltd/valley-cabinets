@@ -5,19 +5,19 @@ const steps = [
     step: '1',
     title: 'Initial Consultation',
     description: 'Book an in-home or virtual consultation to discuss your vision and requirements',
-    image: '/Web Images/chateau-blanc/chateau-3.jpg'
+    image: '/consultation1.jpg'
   },
   {
     step: '2',
     title: 'Design Development',
     description: 'Our experts create detailed 3D renderings and layouts tailored to your space',
-    image: '/Web Images/pebble-beach/K3-A-3.jpg'
+    image: '/consultation2.jpeg'
   },
   {
     step: '3',
     title: 'Final Approval',
     description: 'Review and approve your custom design within 48 hours of consultation',
-    image: '/Web Images/whitewater-bay/E1-3.jpg'
+    image: '/consultation3.jpg'
   }
 ];
 

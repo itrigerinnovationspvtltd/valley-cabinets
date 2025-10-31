@@ -139,6 +139,16 @@ export default function Hero() {
 
           {/* Right Side - Form with Background */}
           <div className="col-span-2 h-full bg-cover bg-center rounded flex items-center justify-center sm:justify-end p-0 sm:pr-16 bg-[url('/Web%20Images/whitewater-bay/E1-1.jpg')] mt-8 sm:mt-0">
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 w-full sm:w-auto px-6 sm:px-0">
+              
+              <div className="text-center ">
+                <h2 className="text-4xl sm:text-5xl font-extrabold sm:text-white sm:opacity-90 text-[#172128] sm:bg-gray-500">
+                  Starting from $4999
+                </h2>
+                
+              </div>
+
             <div className="bg-white shadow-md flex flex-col items-center m-4 sm:m-8 p-6 sm:p-8 border border-gray-200 w-full max-w-sm sm:max-w-md rounded-3xl">
               <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-[#172128]">
                 Free 3D Design
@@ -202,6 +212,7 @@ export default function Hero() {
                   </button>
                 </div>
               </form>
+            </div>
             </div>
           </div>
         </div>
