@@ -16,7 +16,7 @@ export default function CTA() {
             BOOK A CONSULTATION
           </button>
           </a>
-          <a href="#kitchen">
+          <a href="https://valleycabinets.ca/collections/samples">
           <button className="border-2 border-white/80 text-[#333333] bg-white hover:bg-[#EBEBEB] px-10 py-3 rounded-xl text-lg font-semibold transition-all duration-300 backdrop-blur-sm">
             ORDER SAMPLES
           </button>
