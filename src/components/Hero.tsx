@@ -143,7 +143,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8 w-full sm:w-auto px-6 sm:px-0">
               
               <div className="text-center ">
-                <h2 className="text-4xl sm:text-5xl font-extrabold sm:text-white sm:opacity-90 text-[#172128] sm:bg-gray-500">
+                <h2 className="text-4xl sm:text-5xl font-extrabold sm:text-white sm:opacity-90 text-[#172128] ">
                   Starting from $4999
                 </h2>
                 
